@@ -3,3 +3,8 @@
 .idea/
 # npm modules
 **/node_modules/
+# Assets while developing / building
+/*.png
+/*.svg
+/*.ico
+/*.jpg
