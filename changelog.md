@@ -2,7 +2,8 @@
 Changelog del proyecto. No es la gran cosa pero *podría* ser útil a futuro
 
 # [1.6.0]
-
+- Ahora se pueden compartir mallas generadas localmente. Basta con descargar un archivo y enviarlo a tus compañeros para que lo carguen en la malla
+- Se agrega la malla de Ingeniería en Informática
 - Se arreglaron errores de tipeo - issue #32 y pr #33.
 - Se arreglaron ramos y se actualizaron las carreras CIV, ELI, ICI, ICQ, MEC e ICM.
 - Se arreglo un problema que causaba un fondo blanco en modo oscuro en algunos dispositivos móviles.
