@@ -70,19 +70,10 @@ class Malla {
             this.currentMalla = carr;
             this.fullCareerName = fullCareerName
             let promises = [];
-
-            
-            if(localStorage["currentMalla"] != undefined){
-                this.currentMalla = localStorage["currentMalla"];
-                this.fullCareerName = localStorage["currentMalla"];
-            }
     
             promises.push(d3.json( relaPath + "data/data_" + this.currentMalla + ".json"));
             promises.push(d3.json( relaPath + "data/colors_" + this.currentMalla + ".json"));
-            return Promise.all(promises).then(values => {
-                this.setMallaAndCategories(values[0], values[1]);
-                localStorage["currentMalla"] = this.currentMalla;
-            })
+            return Promise.all(promises).then(values => {this.setMallaAndCategories(values[0], values[1])})
 
         }
     }
