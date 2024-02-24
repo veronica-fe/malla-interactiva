@@ -72,6 +72,14 @@ if (params.get('m')) {
     localStorage.setItem("currentCarreer", carr)
 }
 
+// update the url for feedback
+if (carr) {
+    let url = new URL(window.location.href)
+    url.searchParams.set('m', carr)
+    window.history.pushState({}, '', url);
+}
+
+
 if (!carr)
     carr = 'INF'
 
