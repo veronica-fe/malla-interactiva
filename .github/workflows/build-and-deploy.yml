@@ -2,7 +2,19 @@ name: Build and deploy
 
 on:
   push:
-    branches: release
+    tags: 'v[0-9]+.[0-9]+.[0-9]+'
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 
 jobs:
   Build-and-push-container:
@@ -39,17 +51,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - uses: fregante/setup-git-user@v1
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
       # Runs a single command using the runners shell
       - name: Install and Build
         run: |
           npm install
           npm run gbpages
-      - name: Deploy to pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: . # The folder the action should deploy.
+          path: "."
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
