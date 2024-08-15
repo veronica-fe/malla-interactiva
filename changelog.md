@@ -1,6 +1,10 @@
 # Changelog
 Changelog del proyecto. No es la gran cosa pero *podría* ser útil a futuro
 
+# [1.6.3]
+- Se actualizó la malla de Ingeniería Civil Informática
+- Ahora la pagina se actualiza con cada nuevo tag release en vez de cambiar una branch
+
 # [1.6.2]
 - Iconos restaurados de manera temporal (Despues de x visitas mensuales volveran a desaparecer...)
 - Agregada Malla de Ingeniería en Biotecnología 
