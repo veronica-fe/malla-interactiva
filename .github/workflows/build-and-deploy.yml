@@ -20,7 +20,10 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v4
-
+        with:
+          ref: ${{ github.ref }}
+          fetch-tags: true
+      - 
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       -
@@ -57,7 +60,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+          ref: ${{ github.ref }}
       - uses: actions/setup-node@v4
       # Runs a single command using the runners shell
       - name: Install and Build
