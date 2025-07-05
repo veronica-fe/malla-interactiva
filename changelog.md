@@ -1,6 +1,10 @@
 # Changelog
 Changelog del proyecto. No es la gran cosa pero *podría* ser útil a futuro
 
+# [1.6.4]
+- La información de contacto se ha puesto al día
+  - Se agregó el contacto del desarrollador original del proyecto
+
 # [1.6.3]
 - Se actualizó la malla de Ingeniería Civil Informática
 - Ahora la pagina se actualiza con cada nuevo tag release en vez de cambiar una branch
