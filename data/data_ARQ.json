@@ -1,73 +1,80 @@
 {
-	"s1": [
-		["Taller Introducción a la Arquitectura","ARQ101",10,0,"TAL",[],""],
-		["Matemáticas I","MAT050",4,0,"MAT",[],""],
-		["Introducción a la Física","FIS100",3,6,"FIS",[],"A"],
-		["Educación Física I","DEW100",1,0,"HUM",[],""]
-	],
-	"s2": [
-		["Taller Introducción a la Arquitectura","ARQ102",10,0,"TAL",["ARQ101"],""],
-		["Matemáticas II","MAT051",4,0,"MAT",["MAT050"],""],
-		["Física Básica para Arquitectos","FIS103",5,0,"FIS",["MAT050","FIS100"],""],
-		["Educación Física II","DEW101",1,0,"HUM",["DEW100"],""]
-	],
-	"s3": [
-		["Taller Espacio Urbano","ARQ251",7,0,"TAL",["ARQ102"],""],
-		["Teoría e Historia de la ciudad","ARQ211",2,0,"TH",["ARQ102"],""],
-		["Matemáticas III","MAT052",4,0,"MAT",["MAT051"],""],
-		["Concepto de Estructuras","IAO261",3,0,"FIS",["FIS103"],""],
-		["Geometría Arquitectónica","ARQ241",2,0,"MAT",["ARQ102","MAT051"],""],
-		["Deportes","DEW0",1,0,"HUM",["DEW101"],""]
-	],
-	"s4": [
-		["Taller Espacio Intermedio y Clima","ARQ252",7,0,"TAL",["ARQ251"],""],
-		["Teoría e Historia de la Arq. Vernácula","ARQ212",2,0,"TH",["ARQ102"],""],
-		["Cultura Urbana Contemporánea","ARQ222",2,0,"URB",["ARQ211"],""],
-		["Métodos Computacionales en Arquitectura","ARQ232",2,0,"COMP",["MAT051"],""],
-		["Análisis Aproximado","IAO262",3,0,"FIS",["IAO261","MAT051"],""],
-		["Tecnologías Sustentables","ARQ242",3,0,"SUST",["ARQ102","FIS103"],""]
-	],
-	"s5": [
-		["Taller Modelación del Espacio","ARQ351",7,0,"TAL",["ARQ252","MAT052"],""],
-		["Teoría e Historia de la Represent. en Arq.","ARQ311",2,0,"TH",["ARQ241","ARQ251"],""],
-		["Estrategias de Intervención Territorial","ARQ321",2,0,"URB",["ARQ222"],""],
-		["Taller de Métodos Computacionales en Arq.","ARQ331",2,0,"COMP",["ARQ232"],""],
-		["Suelos y Fundaciones","IAO361",3,0,"FIS",["IAO262"],""],
-		["Sistemas Constructivos Básicos","ARQ341",3,0,"CONS",["IAO261","FIS103"],""]
-	],
-	"s6": [
-		["Taller Espacio y Tectónica","ARQ352",7,0,"TAL",["ARQ351"],""],
-		["Teoría e Historia de la Construcción","ARQ312",2,0,"TH",["ARQ341","ARQ212"],""],
-		["Economía I","ICS733",3,0,"ECO",["MAT052","FIS103"],""],
-		["Estructuras Sismorresistentes","IAO362",3,0,"FIS",["IAO262"],""],
-		["Pre-Practica Administración y Prog. de Obra","ARQ342",2,0,"CONS",["ARQ341"],""],
-		["Inglés I","HCW001",2,0,"HUM",[],""]
-	],
-	"s7": [
-		["Taller Avanzado I","ARQ451",9,0,"TAL",["ARQ352","ARQ242","ARQ341"],""],
-		["Marketing e Investigación de Mercado","ILN321",3,0,"ECO",["ICS733"],""],
-		["Optativa","ARQ001",2,0,"OPT",[],""],
-		["Instalaciones Sanitarias, Eléctricas y de Clima","ARQ441",3,0,"CONS",["ARQ342"],""],
-		["Inglés II","HCW002",2,0,"HUM",["HCW001"],""]
-	],
-	"s8": [
-		["Taller Avanzado II","ARQ452",9,0,"TAL",["ARQ451","ARQ331"],""],
-		["Evaluación de Proyectos Inmobiliarios","ILN272",3,0,"ECO",["ILN321"],""],
-		["Optativa","ARQ002",2,0,"OPT",[],""],
-		["Hormigón Armado","IAO462",3,0,"FIS",["IAO362"],""],
-		["Inglés III","HCW003",2,0,"HUM",["HCW002"],""]
-	],
-	"s9": [
-		["Taller Avanzado III","ARQ551",9,0,"TAL",["ARQ452"],""],
-		["Gestión Territorial","ARQ521",2,0,"URB",["ARQ321"],""],
-		["Optativa","ARQ003",2,0,"OPT",[],""],
-		["Estructuras de Acero","IAO561",3,0,"FIS",["IAO362"],""],
-		["Sistemas Constructivos Complejos","ARQ541",3,0,"CONS",["ARQ441"],""]
-	],
-	"s10": [
-		["Proyecto de Titulación","ARQ650",6,0,"TIT",["ARQ551"],""]
-	],
-	"s11": [
-		["Proyecto de Titulación","ARQ651",6,0,"TIT",["ARQ650"],""]
-	]
+  "s1": [
+    ["Antropología", "ARQA101", 2, 0, "HUM", [], "A"],
+    ["Construcción I: Introducción a los sistemas constructivos", "ARQA104", 2, 0, "CON", [], "A"],
+    ["Dibujo Proyectual", "ARQA103", 2, 0, "DIS", [], "A"],
+    ["Diseño Arquitectónico I: Principios del Proyecto", "ARQA102", 6, 0, "DIS", [], "A"],
+    ["Formación Democrática y Ciudadana", "INS002", 2, 0, "FOR", [], "A"],
+    ["Inglés I", "INS101", 1, 0, "FOR", [], "A"],
+    ["Matemáticas Operativas", "FAI001", 3, 0, "FOR", [], "A"]
+  ],
+  "s2": [
+    ["Construcción II: Recursos", "ARQA205", 2, 0, "CON", ["ARQA104"], "A"],
+    ["Diseño Arquitectónico II: La lectura del lugar", "ARQA201", 6, 0, "DIS", ["ARQA102"], "A"],
+    ["Geometría Descriptiva: Percepción Tridimensional", "ARQA203", 2, 0, "DIG", [], "A"],
+    ["Historia de la Arquitectura I", "ARQA204", 2, 0, "TEO", [], "A"],
+    ["Inglés II", "INS102", 1, 0, "FOR", ["INS101"], "A"],
+    ["Modelación", "ARQA206", 2, 0, "DIG", [], "A"],
+    ["Electiva Institucional I", "ARQA202", 2, 0, "OPT", [], "A"]
+  ],
+  "s3": [
+    ["Diseño Arquitectónico III: Espacio y Materia", "ARQA301", 6, 0, "DIS", ["ARQA201"], "A"],
+    ["Construcción III: Fundamentos Tecnológicos", "ARQA304", 2, 0, "CON", ["ARQA205"], "A"],
+    ["Historia de la Arquitectura II", "ARQA303", 2, 0, "TEO", ["ARQA204"], "A"],
+    ["Representación Digital: Interfaz y Expresión", "ARQA305", 2, 0, "DIG", ["ARQA206"], "A"],
+    ["Técnicas de Investigación", "ARQA302", 2, 0, "GES", [], "A"],
+    ["Ecología Urbana", "ARQA306", 2, 0, "URB", [], "A"]
+  ],
+  "s4": [
+    ["Diseño Arquitectónico IV: Arquitectura y Ciudad", "ARQA401", 6, 0, "DIS", ["ARQA301"], "A"],
+    ["Construcción IV: Materialidad", "ARQA404", 2, 0, "CON", ["ARQA304"], "A"],
+    ["Ordenamiento Territorial", "ARQA403", 2, 0, "URB", ["ARQA306"], "A"],
+    ["Gestión del Proyecto", "ARQA402", 2, 0, "GES", ["ARQA302"], "A"],
+    ["Historia de la Arquitectura III", "ARQA405", 2, 0, "TEO", ["ARQA303"], "A"],
+    ["Ética Profesional", "INS205", 2, 0, "FOR", [], "A"]
+  ],
+  "s5": [
+    ["Diseño Arquitectónico V: Lo Público", "ARQA501", 6, 0, "DIS", ["ARQA401"], "A"],
+    ["Construcción V: Tecnología y Diseño", "ARQA504", 2, 0, "CON", ["ARQA404"], "A"],
+    ["Teoría de la Arquitectura", "ARQA505", 2, 0, "TEO", ["ARQA405"], "A"],
+    ["Taller de Representación Digital", "ARQA502", 2, 0, "DIG", ["ARQA305"], "A"],
+    ["Ciudad y Territorio", "ARQA503", 2, 0, "URB", ["ARQA403"], "A"],
+    ["Electiva Institucional II", "ARQA506", 2, 0, "OPT", [], "A"]
+  ],
+  "s6": [
+    ["Diseño Arquitectónico VI: Vivienda Colectiva", "ARQA601", 6, 0, "DIS", ["ARQA501"], "A"],
+    ["Construcción VI: Estructuras", "ARQA604", 2, 0, "CON", ["ARQA504"], "A"],
+    ["Modelación BIM", "ARQA602", 2, 0, "DIG", ["ARQA502"], "A"],
+    ["Historia de la Ciudad", "ARQA603", 2, 0, "TEO", ["ARQA505"], "A"],
+    ["Proyecto Urbano", "ARQA605", 2, 0, "URB", ["ARQA503"], "A"],
+    ["Inglés III", "INS103", 1, 0, "FOR", ["INS102"], "A"]
+  ],
+  "s7": [
+    ["Diseño Arquitectónico VII: Equipamientos", "ARQA701", 6, 0, "DIS", ["ARQA601"], "A"],
+    ["Construcción VII: Instalaciones", "ARQA704", 2, 0, "CON", ["ARQA604"], "A"],
+    ["Urbanismo en Colombia", "ARQA702", 2, 0, "URB", ["ARQA605"], "A"],
+    ["Arquitectura Bioclimática", "ARQA703", 2, 0, "CON", [], "A"],
+    ["Electiva Profesional I", "ARQA705", 2, 0, "OPT", [], "A"],
+    ["Inglés IV", "INS104", 1, 0, "FOR", ["INS103"], "A"]
+  ],
+  "s8": [
+    ["Diseño Arquitectónico VIII: Proyecto Urbano Arquitectónico", "ARQA801", 6, 0, "DIS", ["ARQA701"], "A"],
+    ["Construcción VIII: Proyecto Técnico", "ARQA802", 2, 0, "CON", ["ARQA704"], "A"],
+    ["Gestión del Hábitat", "ARQA803", 2, 0, "GES", [], "A"],
+    ["Electiva Profesional II", "ARQA804", 2, 0, "OPT", [], "A"],
+    ["Práctica Académica", "ARQA805", 3, 0, "GES", [], "A"],
+    ["Metodología de la Investigación", "ARQA806", 2, 0, "GES", [], "A"]
+  ],
+  "s9": [
+    ["Diseño Arquitectónico IX: Anteproyecto de Grado", "ARQA901", 6, 0, "DIS", ["ARQA801"], "A"],
+    ["Construcción IX: Tecnología y Sostenibilidad", "ARQA902", 2, 0, "CON", ["ARQA802"], "A"],
+    ["Electiva Profesional III", "ARQA903", 2, 0, "OPT", [], "A"],
+    ["Electiva Institucional III", "ARQA904", 2, 0, "OPT", [], "A"],
+    ["Trabajo de Grado I", "ARQA905", 2, 0, "GES", ["ARQA806"], "A"]
+  ],
+  "s10": [
+    ["Diseño Arquitectónico X: Proyecto de Grado", "ARQA1001", 6, 0, "DIS", ["ARQA901"], "A"],
+    ["Electiva Profesional IV", "ARQA1002", 2, 0, "OPT", [], "A"],
+    ["Trabajo de Grado II", "ARQA1003", 2, 0, "GES", ["ARQA905"], "A"]
+  ]
 }
